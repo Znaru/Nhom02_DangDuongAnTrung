@@ -1,0 +1,156 @@
+/* Reset margin, padding và thiết lập font */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Dark mode: điều chỉnh background và màu chữ */
+  .dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+
+  #darkModeBtn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  #darkModeBtn::before {
+    content: "💡"; /* Icon bóng đèn */
+  }
+  
+  
+  /* Bao bọc toàn bộ CV */
+  .cv-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  /* Cột trái: Thông tin cá nhân */
+  .left-column {
+    background: #6c63ff;
+    color: #ffffff;
+    width: 30%;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Dark mode cho cột trái */
+  .dark-mode .left-column {
+    background: #4a3e8c;
+  }
+  
+  /* Ảnh đại diện */
+  .profile .avatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  /* Tên và mô tả ngắn */
+  .profile .name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .short-desc {
+    font-style: italic;
+    opacity: 0.9;
+  }
+  
+  /* Thông tin liên hệ */
+  .contact-info {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  /* Cột phải: Nội dung chi tiết */
+  .right-column {
+    background: #fff;
+    width: 70%;
+    padding: 2rem;
+  }
+  
+  /* Dark mode cho cột phải */
+  .dark-mode .right-column {
+    background: #444;
+    color: #ddd;
+  }
+  
+  /* Các phần nội dung */
+  .section {
+    margin-bottom: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #6c63ff;
+    display: inline-block;
+    padding-bottom: 0.25rem;
+  }
+  
+  /* Dark mode cho tiêu đề phần */
+  .dark-mode .section-title {
+    color: #fff;
+    border-bottom: 2px solid #bbb;
+  }
+  
+  /* Thông tin năm trong Education */
+  .year-info {
+    margin-bottom: 1rem;
+  }
+  
+  .year-info h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6c63ff;
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Khu vực kỹ năng */
+  .skill-item {
+    margin-bottom: 1rem;
+  }
+  
+  .skill-item span {
+    font-weight: 500;
+    display: block;
+  }
+  
+  .skill-bar {
+    background: #eee;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0.5rem 0;
+    height: 8px;
+    width: 100%;
+  }
+  
+  /* Thanh kỹ năng bắt đầu từ 0 và sẽ được chạy JS */
+  .skill-progress {
+    background: #6c63ff;
+    height: 100%;
+    width: 0;
+    transition: width 0.5s ease;
+  }
+  
+  /* Dark mode cho thanh kỹ năng */
+  .dark-mode .skill-bar {
+    background: #555;
+  }
+  
